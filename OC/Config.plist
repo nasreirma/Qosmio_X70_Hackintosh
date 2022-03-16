@@ -18,9 +18,17 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>SSDT-UIAC.aml</string>
+				<string>SSDT-GPRW.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>ssdt_data.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -50,7 +58,7 @@
 				<key>Comment</key>
 				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
@@ -124,6 +132,36 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
+				<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>R1BSVwI=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFBSVwI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
 				<string>RTC IRQ 8 Patch</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -161,6 +199,36 @@
 				<true/>
 				<key>Find</key>
 				<data>IgEAeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>IPIC IRQ 2 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgQAeQA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -389,12 +457,42 @@
 				<data>BgAmCg==</data>
 				<key>AAPL00,override-no-connect</key>
 				<data>AP///////wAGr50gAAAAAAAVAQSQJhV4AsiVnldUkiYPUFQAAAABAQEBAQEBAQEBAQEBAQEBsDaAtHA4FkAwZDEAfdYQAAAYdSSAtHA4FkAwIDEAfdYQAAAYAAAA/gBBVU8KICAgICAgICAgAAAA/gBCMTczSFcwMiBWMCAKADz4/////////wgAAAAAAAAAYGP63/5/AAAYAAAAAAAAAGBj+t/+fwAAAF763/5/AAAK5WgaAQAAAAEAAAAAAAAAaGP63/5/AAALAAAAAAAAAAAAAAAAAAAAAF763/5/AACe5WgaAQAAAAEAAAAAAAAAh21kGgEAAAACAAAAAAAAAA==</data>
+				<key>HDMI Port</key>
+				<string>0x3e9b0000, 0306 port</string>
 				<key>device-id</key>
 				<data>EgQAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con1-flags</key>
+				<data>BgAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>AwYIAAAEAADHAwAA</data>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-flags</key>
+				<data>BgAAAA==</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con3-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con3-flags</key>
+				<data>BgAAAA==</data>
+				<key>framebuffer-con3-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con3-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-cursormem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
@@ -426,6 +524,60 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CpuTscSync.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CpuTscSync</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RTCMemoryFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RTCMemoryFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -552,24 +704,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IntelBluetoothInjector.kext</string>
-				<key>Comment</key>
-				<string>IntelBluetoothInjector.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -797,78 +931,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooRMI.kext</string>
-				<key>Comment</key>
-				<string>VoodooRMI.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooRMI</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>VoodooRMI.kext/Contents/PlugIns/RMII2C.kext</string>
-				<key>Comment</key>
-				<string>RMII2C.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RMII2C</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext</string>
-				<key>Comment</key>
-				<string>RMISMBus.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RMISMBus</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext</string>
-				<key>Comment</key>
-				<string>VoodooInput.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>RealtekCardReader.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -894,6 +956,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1434,7 +1514,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 swd_panic=1 igfxonln=1</string>
+				<string>keepsyms=1 debug=0x100 swd_panic=1 igfxonln=1 rtcfx_exclude=B2-B3</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1507,9 +1587,9 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C025283014NGF2CUE</string>
+			<string>C02548301GUGDQPCB</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>1797</integer>
 			<key>ROM</key>
 			<data>fG1iWVoC</data>
 			<key>SpoofVendor</key>
@@ -1517,11 +1597,68 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro11,5</string>
+			<string>MacBookPro11,4</string>
 			<key>SystemSerialNumber</key>
-			<string>C02Q22Z9G85Y</string>
+			<string>C02QRFYCG8WN</string>
 			<key>SystemUUID</key>
-			<string>13E1661B-F98F-4C3C-9523-36CE62D2FDD2</string>
+			<string>7A42EA7D-DBDA-4C9C-8F03-4E50216F6132</string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>10/27/2021</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>428.60.3.0.0</string>
+			<key>BoardAssetTag</key>
+			<string>Base Board Asset Tag</string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string></string>
+			<key>BoardProduct</key>
+			<string>Mac-06F11FD93F0323C5</string>
+			<key>BoardSerialNumber</key>
+			<string>C02548301GUGDQPCB</string>
+			<key>BoardType</key>
+			<integer>10</integer>
+			<key>BoardVersion</key>
+			<string>MacBookPro11,4</string>
+			<key>ChassisAssetTag</key>
+			<string>Asset Tag#</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>C02QRFYCG8WN</string>
+			<key>ChassisType</key>
+			<integer>10</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-06F11FD93F0323C5</string>
+			<key>FirmwareFeatures</key>
+			<data>d/UP6wgAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f/8f/wgAAAA=</data>
+			<key>PlatformFeature</key>
+			<integer>2</integer>
+			<key>ProcessorType</key>
+			<integer>1797</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>MacBook Pro</string>
+			<key>SystemManufacturer</key>
+			<string></string>
+			<key>SystemProductName</key>
+			<string>MacBookPro11,4</string>
+			<key>SystemSKUNumber</key>
+			<string>System SKU#</string>
+			<key>SystemSerialNumber</key>
+			<string>C02QRFYCG8WN</string>
+			<key>SystemUUID</key>
+			<string>7A42EA7D-DBDA-4C9C-8F03-4E50216F6132</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1530,7 +1667,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Overwrite</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -1632,126 +1769,6 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>AudioDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>AudioDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>BiosVideo.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>BiosVideo.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>CrScreenshotDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>CrScreenshotDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>HiiDatabase.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>HiiDatabase.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NvmExpressDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>NvmExpressDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>OpenLinuxBoot.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>OpenLinuxBoot.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>OpenPartitionDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>OpenPartitionDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>OpenUsbKbDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>OpenUsbKbDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Ps2KeyboardDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>Ps2KeyboardDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Ps2MouseDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>Ps2MouseDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>UsbMouseDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>UsbMouseDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>XhciDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>XhciDxe.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
